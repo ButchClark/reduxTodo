@@ -17,7 +17,7 @@ const getVisibleTodos = (todos, filter) => {
             return filtered
         case 'SHOW_ALL':
         default:
-            console.log('Show-All todos:')
+            console.log(`Show-All todos - filter: ${filter}`)
             console.dir(todos)
             return todos
     }

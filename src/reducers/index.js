@@ -8,6 +8,7 @@ const {SHOW_ALL} = VisibilityFilters
 
 
 function selectedSubreddit(state = 'reactjs', action) {
+    console.log(`> reducers - state: ${state}, action.type: ${action.type}`)
     switch (action.type) {
         case SELECT_SUBREDDIT:
             return action.subreddit
